@@ -289,10 +289,7 @@
           <!-- LRS-VQA Results Table -->
           <div class="content mt-5">
             <h3 class="title is-4">Performance on LRS-VQA Dataset</h3>
-            <p class="has-text-justified mb-4">
-              Quantitative results on the LRS-VQA dataset. <span style="color: #28a745; font-weight: 600;">Green</span> numbers denote the best score, and <span style="color: #d4af37; font-weight: 600;">yellow</span> numbers denote the second best.
-              The last row (<em>Improvements</em>) reports the percentage improvement of <strong>ZoomSearch (Ours)</strong> over the LLaVA-ov baseline.
-            </p>
+           
             
             <div style="overflow-x: auto;">
               <table class="table is-bordered is-striped is-hoverable" style="margin: 0 auto; font-size: 0.85rem;">
@@ -340,9 +337,6 @@
                     <td>47.45</td>
                     <td>18.78</td>
                     <td style="color: #d4af37; font-weight: 700;">29.26</td>
-                  </tr>
-                  <tr style="background-color: #fafafa;">
-                    <td colspan="12" style="padding: 2px;"></td>
                   </tr>
                   <tr>
                     <td>LLaVA-v1.5-7b</td>
@@ -414,9 +408,6 @@
                     <td>17.96</td>
                     <td>23.30</td>
                   </tr>
-                  <tr style="background-color: #fafafa;">
-                    <td colspan="12" style="padding: 2px;"></td>
-                  </tr>
                   <tr>
                     <td>GeoChat</td>
                     <td>CVPR'24</td>
@@ -444,9 +435,6 @@
                     <td>46.27</td>
                     <td>12.24</td>
                     <td>26.69</td>
-                  </tr>
-                  <tr style="background-color: #fafafa;">
-                    <td colspan="12" style="padding: 2px;"></td>
                   </tr>
                   <tr>
                     <td>GeoLLaVA-8K</td>
@@ -476,9 +464,6 @@
                     <td>19.18</td>
                     <td>27.92</td>
                   </tr>
-                  <tr style="background-color: #fafafa;">
-                    <td colspan="12" style="padding: 2px;"></td>
-                  </tr>
                   <tr>
                     <td>ZoomEye</td>
                     <td>EMNLP'25</td>
@@ -506,9 +491,6 @@
                     <td style="color: #28a745; font-weight: 700;">51.90</td>
                     <td style="color: #d4af37; font-weight: 700;">24.08</td>
                     <td>28.82</td>
-                  </tr>
-                  <tr style="background-color: #fafafa;">
-                    <td colspan="12" style="padding: 2px;"></td>
                   </tr>
                   <tr style="background-color: #e8f4f8; font-weight: 600;">
                     <td><strong>ZoomSearch (Ours)</strong></td>
@@ -546,9 +528,7 @@
           <!-- MME-RealWorld-RS Results Table -->
           <div class="content mt-6">
             <h3 class="title is-4">Performance on MME-RealWorld-RS Dataset</h3>
-            <p class="has-text-justified mb-4">
-              Quantitative results on the MME-RealWorld-RS dataset. <span style="color: #28a745; font-weight: 600;">Green</span> numbers denote the best score, and <span style="color: #d4af37; font-weight: 600;">yellow</span> numbers denote the second best.
-            </p>
+            
             
             <div style="overflow-x: auto; display: flex; justify-content: center;">
               <table class="table is-bordered is-striped is-hoverable" style="font-size: 0.9rem; max-width: 800px;">
@@ -578,9 +558,6 @@
                     <td>29.83</td>
                     <td>18.90</td>
                     <td>27.42</td>
-                  </tr>
-                  <tr style="background-color: #fafafa;">
-                    <td colspan="6" style="padding: 2px;"></td>
                   </tr>
                   <tr>
                     <td>LLaVA-v1.5-7b</td>
@@ -622,9 +599,6 @@
                     <td>7.91</td>
                     <td>29.26</td>
                   </tr>
-                  <tr style="background-color: #fafafa;">
-                    <td colspan="6" style="padding: 2px;"></td>
-                  </tr>
                   <tr>
                     <td>GeoChat</td>
                     <td>504</td>
@@ -640,9 +614,6 @@
                     <td>20.32</td>
                     <td>16.80</td>
                     <td>24.18</td>
-                  </tr>
-                  <tr style="background-color: #fafafa;">
-                    <td colspan="6" style="padding: 2px;"></td>
                   </tr>
                   <tr>
                     <td>GeoLLaVA-8K</td>
@@ -660,9 +631,6 @@
                     <td>32.46</td>
                     <td>52.09</td>
                   </tr>
-                  <tr style="background-color: #fafafa;">
-                    <td colspan="6" style="padding: 2px;"></td>
-                  </tr>
                   <tr>
                     <td>ZoomEye</td>
                     <td>Dynamic</td>
@@ -678,9 +646,6 @@
                     <td style="color: #d4af37; font-weight: 700;">64.53</td>
                     <td style="color: #28a745; font-weight: 700;">40.25</td>
                     <td style="color: #d4af37; font-weight: 700;">54.20</td>
-                  </tr>
-                  <tr style="background-color: #fafafa;">
-                    <td colspan="6" style="padding: 2px;"></td>
                   </tr>
                   <tr style="background-color: #e8f4f8; font-weight: 600;">
                     <td><strong>ZoomSearch (Ours)</strong></td>
@@ -714,49 +679,29 @@
   <div class="hero-body">
     <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths carousel-wrapper-column">
+        <div class="column is-four-fifths">
           <h2 class="title is-3">Case Study</h2>
-          <style>
-            /* 给外层column添加padding，为箭头留出空间 */
-            .carousel-wrapper-column {
-              padding: 0 70px !important;
-            }
-            
-            /* 确保轮播容器保持overflow hidden（隐藏其他图片）*/
-            #results-carousel .slider {
-              overflow: hidden !important;
-            }
-            
-            /* 将箭头移到容器外侧 */
-            #results-carousel .slider-navigation-previous {
-              left: -60px !important;
-            }
-            
-            #results-carousel .slider-navigation-next {
-              right: -60px !important;
-            }
-          </style>
-          
+
           <div id="results-carousel" class="carousel results-carousel">
-              <div class="item">
-                <img src="static/images/qualitative1.png" alt="Adaptive zoom search visualization" loading="lazy" style="max-width: 70%; margin: 0 auto; display: block;"/>
-                <h2 class="subtitle has-text-centered">
-                  Qualitative comparison between our method and other search-based methods on an object counting task.
-                </h2>
-              </div>
-              <div class="item">
-                <img src="static/images/qualitative2.png" alt="VQA results comparison" loading="lazy" style="max-width: 70%; margin: 0 auto; display: block;"/>
-                <h2 class="subtitle has-text-centered">
-                  Qualitative comparison between our method and other search-based methods on an object color recognition task.
-                </h2>
-              </div>
-              <div class="item">
-                <img src="static/images/good_cases.png" alt="VQA results comparison" loading="lazy" style="max-width: 70%; margin: 0 auto; display: block;"/>
-                <h2 class="subtitle has-text-centered">
-                   More qualitative results of ZoomSearch.
-                </h2>
-              </div>
+            <div class="item">
+              <img src="static/images/qualitative1.png" alt="Adaptive zoom search visualization" loading="lazy" style="max-width: 70%; margin: 0 auto; display: block;"/>
+              <h2 class="subtitle has-text-centered">
+                Qualitative comparison between our method and other search-based methods on an object counting task.
+              </h2>
             </div>
+            <div class="item">
+              <img src="static/images/qualitative2.png" alt="VQA results comparison" loading="lazy" style="max-width: 70%; margin: 0 auto; display: block;"/>
+              <h2 class="subtitle has-text-centered">
+                Qualitative comparison between our method and other search-based methods on an object color recognition task.
+              </h2>
+            </div>
+            <div class="item">
+              <img src="static/images/good_cases.png" alt="VQA results comparison" loading="lazy" style="max-width: 90%; margin: 0 auto; display: block;"/>
+              <h2 class="subtitle has-text-centered">
+                 More qualitative results of ZoomSearch.
+              </h2>
+            </div>
+          </div>
         </div>
       </div>
     </div>
