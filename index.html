@@ -78,59 +78,6 @@
   <!-- Fonts - Optimized loading -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   
-  <!-- Custom styles for carousel navigation -->
-  <style>
-    /* Container setup - add padding to make room for arrows outside image area */
-    #results-carousel {
-      position: relative;
-      padding: 0 80px; /* Add padding for arrow space */
-    }
-    
-    /* Hide overflow only for the carousel items container */
-    #results-carousel .carousel-container {
-      overflow: hidden !important;
-    }
-    
-    /* Adjust carousel arrow positions to edges of padded area */
-    #results-carousel .carousel-navigation .carousel-nav-left,
-    #results-carousel button.is-previous {
-      left: 0 !important; /* Position at the left edge */
-    }
-    
-    #results-carousel .carousel-navigation .carousel-nav-right,
-    #results-carousel button.is-next {
-      right: 0 !important; /* Position at the right edge */
-    }
-    
-    /* Style the arrows for better visibility */
-    #results-carousel .carousel-navigation button,
-    #results-carousel button.is-previous,
-    #results-carousel button.is-next {
-      background-color: rgba(0, 0, 0, 0.5) !important;
-      width: 50px !important;
-      height: 50px !important;
-      border-radius: 50% !important;
-      border: 2px solid rgba(255, 255, 255, 0.3) !important;
-      transition: all 0.3s ease;
-      z-index: 10;
-    }
-    
-    #results-carousel .carousel-navigation button:hover,
-    #results-carousel button.is-previous:hover,
-    #results-carousel button.is-next:hover {
-      background-color: rgba(0, 0, 0, 0.7) !important;
-      transform: scale(1.1);
-      border-color: rgba(255, 255, 255, 0.5) !important;
-    }
-    
-    /* Responsive: reduce padding on smaller screens */
-    @media screen and (max-width: 768px) {
-      #results-carousel {
-        padding: 0 10px;
-      }
-    }
-  </style>
-  
   <!-- Defer non-critical JavaScript -->
   <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
