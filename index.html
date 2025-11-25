@@ -714,36 +714,49 @@
   <div class="hero-body">
     <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
+        <div class="column is-four-fifths carousel-wrapper-column">
           <h2 class="title is-3">Case Study</h2>
-           <style>
-            .carousel .carousel-navigation .carousel-nav-left {
-              left: -80px !important;
+          <style>
+            /* 给外层column添加padding，为箭头留出空间 */
+            .carousel-wrapper-column {
+              padding: 0 70px !important;
             }
-            .carousel .carousel-navigation .carousel-nav-right {
-              right: -80px !important;
+            
+            /* 确保轮播容器保持overflow hidden（隐藏其他图片）*/
+            #results-carousel .slider {
+              overflow: hidden !important;
+            }
+            
+            /* 将箭头移到容器外侧 */
+            #results-carousel .slider-navigation-previous {
+              left: -60px !important;
+            }
+            
+            #results-carousel .slider-navigation-next {
+              right: -60px !important;
             }
           </style>
+          
           <div id="results-carousel" class="carousel results-carousel">
-            <div class="item">
-              <img src="static/images/qualitative1.png" alt="Adaptive zoom search visualization" loading="lazy" style="max-width: 70%; margin: 0 auto; display: block;"/>
-              <h2 class="subtitle has-text-centered">
-                Qualitative comparison between our method and other search-based methods on an object counting task.
-              </h2>
+              <div class="item">
+                <img src="static/images/qualitative1.png" alt="Adaptive zoom search visualization" loading="lazy" style="max-width: 70%; margin: 0 auto; display: block;"/>
+                <h2 class="subtitle has-text-centered">
+                  Qualitative comparison between our method and other search-based methods on an object counting task.
+                </h2>
+              </div>
+              <div class="item">
+                <img src="static/images/qualitative2.png" alt="VQA results comparison" loading="lazy" style="max-width: 70%; margin: 0 auto; display: block;"/>
+                <h2 class="subtitle has-text-centered">
+                  Qualitative comparison between our method and other search-based methods on an object color recognition task.
+                </h2>
+              </div>
+              <div class="item">
+                <img src="static/images/good_cases.png" alt="VQA results comparison" loading="lazy" style="max-width: 70%; margin: 0 auto; display: block;"/>
+                <h2 class="subtitle has-text-centered">
+                   More qualitative results of ZoomSearch.
+                </h2>
+              </div>
             </div>
-            <div class="item">
-              <img src="static/images/qualitative2.png" alt="VQA results comparison" loading="lazy" style="max-width: 70%; margin: 0 auto; display: block;"/>
-              <h2 class="subtitle has-text-centered">
-                Qualitative comparison between our method and other search-based methods on an object color recognition task.
-              </h2>
-            </div>
-            <div class="item">
-              <img src="static/images/good_cases.png" alt="VQA results comparison" loading="lazy" style="max-width: 70%; margin: 0 auto; display: block;"/>
-              <h2 class="subtitle has-text-centered">
-                 More qualitative results of ZoomSearch.
-              </h2>
-            </div>
-          </div>
         </div>
       </div>
     </div>
