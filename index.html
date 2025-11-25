@@ -285,12 +285,24 @@
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           <h2 class="title is-3">Case Study</h2>
-          <style>
-            #results-carousel .carousel-control-prev {
-              left: -60px;
+           <style>
+            /* 轮播箭头外移 */
+            #results-carousel .carousel-control-prev,
+            #results-carousel .slick-prev,
+            #results-carousel .swiper-button-prev {
+              left: -80px !important;
             }
-            #results-carousel .carousel-control-next {
-              right: -60px;
+            #results-carousel .carousel-control-next,
+            #results-carousel .slick-next,
+            #results-carousel .swiper-button-next {
+              right: -80px !important;
+            }
+            /* Bulma Carousel 特定样式 */
+            .carousel .carousel-navigation .carousel-nav-left {
+              left: -80px !important;
+            }
+            .carousel .carousel-navigation .carousel-nav-right {
+              right: -80px !important;
             }
           </style>
           <div id="results-carousel" class="carousel results-carousel">
@@ -304,6 +316,12 @@
               <img src="static/images/qualitative2.png" alt="VQA results comparison" loading="lazy" style="max-width: 70%; margin: 0 auto; display: block;"/>
               <h2 class="subtitle has-text-centered">
                 Qualitative comparison between our method and other search-based methods on an object color recognition task.
+              </h2>
+            </div>
+            <div class="item">
+              <img src="static/images/good_case.png" alt="VQA results comparison" loading="lazy" style="max-width: 70%; margin: 0 auto; display: block;"/>
+              <h2 class="subtitle has-text-centered">
+                 More qualitative results of ZoomSearch.
               </h2>
             </div>
           </div>
