@@ -7,7 +7,7 @@
   <!-- Primary Meta Tags -->
   <meta name="title" content="Look Where It Matters: Training-Free Ultra-HR Remote Sensing VQA - Yunqi Zhou, Chengjie Jiang, Chun Yuan, Jing Li">
   <meta name="description" content="A training-free approach for ultra-high resolution remote sensing visual question answering using adaptive zoom search to efficiently process large-scale satellite imagery.">
-  <meta name="keywords" content="remote sensing, visual question answering, VQA, ultra-high resolution, training-free, adaptive zoom search, computer vision, satellite imagery, multimodal AI">
+  <meta name="keywords" content="remote sensing, visual question answering, ultra-high resolution, training-free, adaptive zoom search, computer vision, satellite imagery, multimodal AI">
   <meta name="author" content="Yunqi Zhou, Chengjie Jiang, Chun Yuan, Jing Li">
   <meta name="robots" content="index, follow">
   <meta name="language" content="English">
@@ -54,8 +54,8 @@
   <title>Look Where It Matters: Training-Free Ultra-HR Remote Sensing VQA | Academic Research</title>
   
   <!-- Favicon and App Icons -->
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link rel="apple-touch-icon" href="static/images/favicon.ico">
+  <link rel="icon" type="image/png" href="static/images/logo.png">
+  <link rel="apple-touch-icon" href="static/images/logo.png">
   
   <!-- Critical CSS - Load synchronously -->
   <link rel="stylesheet" href="static/css/bulma.min.css">
@@ -126,11 +126,6 @@
         }
       }
     ],
-    "datePublished": "2024-01-01",
-    "publisher": {
-      "@type": "Organization",
-      "name": "CONFERENCE_OR_JOURNAL_NAME"
-    },
     "keywords": ["remote sensing", "visual question answering", "ultra-high resolution", "training-free", "adaptive zoom search", "computer vision", "satellite imagery"],
     "abstract": "With advances in satellite constellations, sensor technologies, and imaging pipelines, ultra-high-resolution (Ultra-HR) remote sensing imagery is becoming increasingly widespread. However, current remote sensing foundation models are ill-suited to such inputs: full-image encoding exhausts token and memory budgets, while resize-based preprocessing loses fine-grained and answer-critical details. In this context, guiding the model look where it matters before prediction becomes crucial. Therefore, we present ZoomSearch, a training-free, plug-and-play pipeline that decouples 'where to look' from 'how to answer' for Ultra-HR Remote Sensing Visual Question Answering (RS-VQA). ZoomSearch combines Adaptive Multi-Branch Zoom Search, which performs a hierarchical search over image patches to localize query-relevant regions, with Layout-Aware Patch Reassembly, which reorganizes the selected patches into a compact, layout-faithful canvas. We conduct comprehensive experiments on Ultra-HR RS-VQA benchmarks MME-RealWorld-RS and LRS-VQA, comparing against (i) strong general foundation models, (ii) remote sensing foundation models, (iii) Ultra-HR RS-VQA methods, and (iv) plug-and-play search-based VQA methods. When integrated with LLaVA-ov, ZoomSearch attains state-of-the-art accuracy across diverse tasks, improving the LLaVA-ov baseline by 26.3% on LRS-VQA and 114.8% on MME-RealWorld-RS. Meanwhile, it achieves much higher inference efficiency, outperforming prior search-based methods by 20–44% in speed.",
     "isAccessibleForFree": true,
@@ -166,25 +161,31 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Look Where It Matters: Training-Free Ultra-HR Remote Sensing VQA via Adaptive Zoom Search</h1>
-            <div class="is-size-5 publication-authors">
+            <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+              <img src="static/images/logo.png" alt="Logo" style="height: 60px; margin-right: 15px;">
+              <h1 class="title is-3 publication-title" style="margin: 0; text-align: left; line-height: 1.3;">
+                Look Where It Matters:<br>
+                Training-Free Ultra-HR Remote Sensing VQA via Adaptive Zoom Search
+              </h1>
+            </div>
+            <div class="is-size-4 publication-authors">
               <span class="author-block">
-                <a href="YUNQI_ZHOU_LINK" target="_blank">Yunqi Zhou</a><sup>1*</sup>,</span>
+                <a href="https://scholar.google.com/citations?user=h3QTqt8AAAAJ&hl" target="_blank">Yunqi Zhou</a><sup>1*</sup>,</span>
                 <span class="author-block">
-                  <a href="CHENGJIE_JIANG_LINK" target="_blank">Chengjie Jiang</a><sup>2*</sup>,</span>
+                  <a href="https://scholar.google.com/citations?user=NGizEIYAAAAJ&hl" target="_blank">Chengjie Jiang</a><sup>2*</sup>,</span>
                   <span class="author-block">
-                    <a href="CHUN_YUAN_LINK" target="_blank">Chun Yuan</a><sup>2</sup>,</span>
+                    <a href="https://scholar.google.com/citations?user=fYdxi2sAAAAJ" target="_blank">Chun Yuan</a><sup>2</sup>,</span>
                   <span class="author-block">
-                    <a href="JING_LI_LINK" target="_blank">Jing Li</a><sup>3†</sup>
+                    <a href="https://scholar.google.com/citations?hl=zh-CN&user=YAG9tSMAAAAJ" target="_blank">Jing Li</a><sup>3†</sup>
                   </span>
                   </div>
 
-                  <div class="is-size-5 publication-authors">
+                  <div class="is-size-4 publication-authors">
                     <span class="author-block"><sup>1</sup>Central University of Finance and Economics&nbsp;&nbsp;</span>
                     <span class="author-block"><sup>2</sup>Tsinghua University&nbsp;&nbsp;</span>
                     <span class="author-block"><sup>3</sup>East China Normal University</span>
                     <br>
-                    <span class="author-block">Conference Name Year</span>
+                    <!-- <span class="author-block">Conference Name Year</span> -->
                     <span class="eql-cntrb"><small><br><sup>*</sup>Equal Contribution&nbsp;&nbsp;<sup>†</sup>Corresponding Author</small></span>
                   </div>
 
@@ -206,7 +207,7 @@
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
-                    <span>Code</span>
+                    <span>Code(coming soon)</span>
                   </a>
                 </span>
 
