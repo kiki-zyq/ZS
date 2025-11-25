@@ -80,47 +80,53 @@
   
   <!-- Custom styles for carousel navigation -->
   <style>
-    /* Adjust carousel arrow positions to not overlap with images */
-    .carousel .carousel-navigation .carousel-nav-left {
-      left: -60px !important; /* Move left arrow further left */
+    /* Container setup - add padding to make room for arrows outside image area */
+    #results-carousel {
+      position: relative;
+      padding: 0 80px; /* Add padding for arrow space */
     }
     
-    .carousel .carousel-navigation .carousel-nav-right {
-      right: -60px !important; /* Move right arrow further right */
+    /* Hide overflow only for the carousel items container */
+    #results-carousel .carousel-container {
+      overflow: hidden !important;
     }
     
-    /* Make arrows visible even when outside container */
-    .carousel {
-      overflow: visible !important;
+    /* Adjust carousel arrow positions to edges of padded area */
+    #results-carousel .carousel-navigation .carousel-nav-left,
+    #results-carousel button.is-previous {
+      left: 0 !important; /* Position at the left edge */
     }
     
-    /* Ensure parent container allows overflow */
-    .results-carousel {
-      overflow: visible !important;
+    #results-carousel .carousel-navigation .carousel-nav-right,
+    #results-carousel button.is-next {
+      right: 0 !important; /* Position at the right edge */
     }
     
-    /* Optional: Adjust arrow size and styling for better visibility */
-    .carousel .carousel-navigation button {
+    /* Style the arrows for better visibility */
+    #results-carousel .carousel-navigation button,
+    #results-carousel button.is-previous,
+    #results-carousel button.is-next {
       background-color: rgba(0, 0, 0, 0.5) !important;
-      width: 45px !important;
-      height: 45px !important;
+      width: 50px !important;
+      height: 50px !important;
       border-radius: 50% !important;
+      border: 2px solid rgba(255, 255, 255, 0.3) !important;
       transition: all 0.3s ease;
+      z-index: 10;
     }
     
-    .carousel .carousel-navigation button:hover {
+    #results-carousel .carousel-navigation button:hover,
+    #results-carousel button.is-previous:hover,
+    #results-carousel button.is-next:hover {
       background-color: rgba(0, 0, 0, 0.7) !important;
       transform: scale(1.1);
+      border-color: rgba(255, 255, 255, 0.5) !important;
     }
     
-    /* Responsive: bring arrows closer on smaller screens */
+    /* Responsive: reduce padding on smaller screens */
     @media screen and (max-width: 768px) {
-      .carousel .carousel-navigation .carousel-nav-left {
-        left: 10px !important;
-      }
-      
-      .carousel .carousel-navigation .carousel-nav-right {
-        right: 10px !important;
+      #results-carousel {
+        padding: 0 10px;
       }
     }
   </style>
