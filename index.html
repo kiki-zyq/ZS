@@ -278,6 +278,437 @@
 </section>
 <!-- End Introduction Hero Figure -->
 
+<!-- Experiment Results Section -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container is-max-widescreen">
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <h2 class="title is-3">Experimental Results</h2>
+          
+          <!-- LRS-VQA Results Table -->
+          <div class="content mt-5">
+            <h3 class="title is-4">Performance on LRS-VQA Dataset</h3>
+            <p class="has-text-justified mb-4">
+              Quantitative results on the LRS-VQA dataset. <span style="color: #28a745; font-weight: 600;">Green</span> numbers denote the best score, and <span style="color: #d4af37; font-weight: 600;">yellow</span> numbers denote the second best.
+              The last row (<em>Improvements</em>) reports the percentage improvement of <strong>ZoomSearch (Ours)</strong> over the LLaVA-ov baseline.
+            </p>
+            
+            <div style="overflow-x: auto;">
+              <table class="table is-bordered is-striped is-hoverable" style="margin: 0 auto; font-size: 0.85rem;">
+                <thead>
+                  <tr style="background-color: #f5f5f5;">
+                    <th>Method</th>
+                    <th>Pub.</th>
+                    <th>Max Res.</th>
+                    <th>Rural/Urban</th>
+                    <th>Count</th>
+                    <th>Reasoning</th>
+                    <th>Status</th>
+                    <th>Category</th>
+                    <th>Shape</th>
+                    <th>Color</th>
+                    <th>Background</th>
+                    <th>Avg.</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Gemini-2.5-Flash</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>56.49</td>
+                    <td style="color: #28a745; font-weight: 700;">18.49</td>
+                    <td>20.40</td>
+                    <td style="color: #d4af37; font-weight: 700;">18.69</td>
+                    <td>14.81</td>
+                    <td>34.17</td>
+                    <td>36.08</td>
+                    <td>16.11</td>
+                    <td>26.91</td>
+                  </tr>
+                  <tr>
+                    <td>GPT-4o</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>55.19</td>
+                    <td>16.50</td>
+                    <td>21.39</td>
+                    <td style="color: #28a745; font-weight: 700;">19.22</td>
+                    <td>16.26</td>
+                    <td style="color: #28a745; font-weight: 700;">39.32</td>
+                    <td>47.45</td>
+                    <td>18.78</td>
+                    <td style="color: #d4af37; font-weight: 700;">29.26</td>
+                  </tr>
+                  <tr style="background-color: #fafafa;">
+                    <td colspan="12" style="padding: 2px;"></td>
+                  </tr>
+                  <tr>
+                    <td>LLaVA-v1.5-7b</td>
+                    <td>NeurIPS'23</td>
+                    <td>336</td>
+                    <td>53.04</td>
+                    <td>11.84</td>
+                    <td>20.50</td>
+                    <td>11.80</td>
+                    <td>15.40</td>
+                    <td>31.98</td>
+                    <td>39.87</td>
+                    <td>19.18</td>
+                    <td>25.45</td>
+                  </tr>
+                  <tr>
+                    <td>LLaVA-v1.6-7b</td>
+                    <td>-</td>
+                    <td>672</td>
+                    <td>52.00</td>
+                    <td>13.68</td>
+                    <td>19.80</td>
+                    <td>17.40</td>
+                    <td>15.91</td>
+                    <td>29.77</td>
+                    <td>41.31</td>
+                    <td>17.96</td>
+                    <td>25.98</td>
+                  </tr>
+                  <tr>
+                    <td>LLaVA-ov-7b</td>
+                    <td>TMLR'25</td>
+                    <td>384</td>
+                    <td>50.08</td>
+                    <td>11.68</td>
+                    <td>21.80</td>
+                    <td>11.20</td>
+                    <td>19.15</td>
+                    <td>31.98</td>
+                    <td>45.49</td>
+                    <td>17.14</td>
+                    <td>26.07</td>
+                  </tr>
+                  <tr>
+                    <td>Qwen2.5-VL-7b</td>
+                    <td>-</td>
+                    <td>1000</td>
+                    <td>47.12</td>
+                    <td>16.18</td>
+                    <td>19.50</td>
+                    <td>9.20</td>
+                    <td>16.31</td>
+                    <td>21.81</td>
+                    <td style="color: #d4af37; font-weight: 700;">51.76</td>
+                    <td>17.96</td>
+                    <td>24.98</td>
+                  </tr>
+                  <tr>
+                    <td>LLaVA-HR</td>
+                    <td>ICLR'25</td>
+                    <td>1536</td>
+                    <td>57.11</td>
+                    <td>9.67</td>
+                    <td>17.60</td>
+                    <td>9.10</td>
+                    <td>15.20</td>
+                    <td>21.02</td>
+                    <td>37.91</td>
+                    <td>17.96</td>
+                    <td>23.30</td>
+                  </tr>
+                  <tr style="background-color: #fafafa;">
+                    <td colspan="12" style="padding: 2px;"></td>
+                  </tr>
+                  <tr>
+                    <td>GeoChat</td>
+                    <td>CVPR'24</td>
+                    <td>504</td>
+                    <td>61.42</td>
+                    <td>11.76</td>
+                    <td>16.70</td>
+                    <td>6.50</td>
+                    <td>8.00</td>
+                    <td>21.47</td>
+                    <td>17.39</td>
+                    <td>11.84</td>
+                    <td>19.38</td>
+                  </tr>
+                  <tr>
+                    <td>VHM</td>
+                    <td>AAAI'25</td>
+                    <td>336</td>
+                    <td>56.39</td>
+                    <td>12.26</td>
+                    <td>18.80</td>
+                    <td>13.40</td>
+                    <td>17.12</td>
+                    <td>31.86</td>
+                    <td>46.27</td>
+                    <td>12.24</td>
+                    <td>26.69</td>
+                  </tr>
+                  <tr style="background-color: #fafafa;">
+                    <td colspan="12" style="padding: 2px;"></td>
+                  </tr>
+                  <tr>
+                    <td>GeoLLaVA-8K</td>
+                    <td>NeurIPS'25</td>
+                    <td>8K</td>
+                    <td>54.68</td>
+                    <td>12.83</td>
+                    <td>21.32</td>
+                    <td>4.41</td>
+                    <td>14.81</td>
+                    <td>22.41</td>
+                    <td>49.52</td>
+                    <td>16.18</td>
+                    <td>24.52</td>
+                  </tr>
+                  <tr>
+                    <td>ImageRAG</td>
+                    <td>GRSM'25</td>
+                    <td>Dynamic</td>
+                    <td style="color: #d4af37; font-weight: 700;">58.55</td>
+                    <td>13.70</td>
+                    <td>21.20</td>
+                    <td>10.00</td>
+                    <td>21.07</td>
+                    <td>33.90</td>
+                    <td>45.75</td>
+                    <td>19.18</td>
+                    <td>27.92</td>
+                  </tr>
+                  <tr style="background-color: #fafafa;">
+                    <td colspan="12" style="padding: 2px;"></td>
+                  </tr>
+                  <tr>
+                    <td>ZoomEye</td>
+                    <td>EMNLP'25</td>
+                    <td>Dynamic</td>
+                    <td>48.24</td>
+                    <td>14.76</td>
+                    <td>22.10</td>
+                    <td>10.40</td>
+                    <td>23.61</td>
+                    <td>28.58</td>
+                    <td>45.36</td>
+                    <td>21.63</td>
+                    <td>26.84</td>
+                  </tr>
+                  <tr>
+                    <td>RAP</td>
+                    <td>ICML'25</td>
+                    <td>Dynamic</td>
+                    <td>45.45</td>
+                    <td>16.78</td>
+                    <td style="color: #d4af37; font-weight: 700;">26.10</td>
+                    <td>11.00</td>
+                    <td style="color: #d4af37; font-weight: 700;">24.32</td>
+                    <td>30.96</td>
+                    <td style="color: #28a745; font-weight: 700;">51.90</td>
+                    <td style="color: #d4af37; font-weight: 700;">24.08</td>
+                    <td>28.82</td>
+                  </tr>
+                  <tr style="background-color: #fafafa;">
+                    <td colspan="12" style="padding: 2px;"></td>
+                  </tr>
+                  <tr style="background-color: #e8f4f8; font-weight: 600;">
+                    <td><strong>ZoomSearch (Ours)</strong></td>
+                    <td>-</td>
+                    <td>Dynamic</td>
+                    <td style="color: #28a745; font-weight: 700;">62.53</td>
+                    <td style="color: #d4af37; font-weight: 700;">17.32</td>
+                    <td style="color: #28a745; font-weight: 700;">28.50</td>
+                    <td>15.90</td>
+                    <td style="color: #28a745; font-weight: 700;">24.75</td>
+                    <td style="color: #d4af37; font-weight: 700;">37.80</td>
+                    <td>50.12</td>
+                    <td style="color: #28a745; font-weight: 700;">26.43</td>
+                    <td style="color: #28a745; font-weight: 700;">32.92</td>
+                  </tr>
+                  <tr style="background-color: #fff3cd; font-style: italic;">
+                    <td><em>Improvements</em></td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td style="color: #dc3545; font-weight: 700;">+25%</td>
+                    <td style="color: #dc3545; font-weight: 700;">+48%</td>
+                    <td style="color: #dc3545; font-weight: 700;">+31%</td>
+                    <td style="color: #dc3545; font-weight: 700;">+42%</td>
+                    <td style="color: #dc3545; font-weight: 700;">+29%</td>
+                    <td style="color: #dc3545; font-weight: 700;">+18%</td>
+                    <td style="color: #dc3545; font-weight: 700;">+10%</td>
+                    <td style="color: #dc3545; font-weight: 700;">+54%</td>
+                    <td style="color: #dc3545; font-weight: 700;">+26%</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- MME-RealWorld-RS Results Table -->
+          <div class="content mt-6">
+            <h3 class="title is-4">Performance on MME-RealWorld-RS Dataset</h3>
+            <p class="has-text-justified mb-4">
+              Quantitative results on the MME-RealWorld-RS dataset. <span style="color: #28a745; font-weight: 600;">Green</span> numbers denote the best score, and <span style="color: #d4af37; font-weight: 600;">yellow</span> numbers denote the second best.
+            </p>
+            
+            <div style="overflow-x: auto; display: flex; justify-content: center;">
+              <table class="table is-bordered is-striped is-hoverable" style="font-size: 0.9rem; max-width: 800px;">
+                <thead>
+                  <tr style="background-color: #f5f5f5;">
+                    <th>Method</th>
+                    <th>Max Res.</th>
+                    <th>Position</th>
+                    <th>Color</th>
+                    <th>Count</th>
+                    <th>Avg.</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Gemini-2.5-Flash</td>
+                    <td>-</td>
+                    <td>55.43</td>
+                    <td>50.92</td>
+                    <td>29.64</td>
+                    <td>45.33</td>
+                  </tr>
+                  <tr>
+                    <td>GPT-4o</td>
+                    <td>-</td>
+                    <td>33.52</td>
+                    <td>29.83</td>
+                    <td>18.90</td>
+                    <td>27.42</td>
+                  </tr>
+                  <tr style="background-color: #fafafa;">
+                    <td colspan="6" style="padding: 2px;"></td>
+                  </tr>
+                  <tr>
+                    <td>LLaVA-v1.5-7b</td>
+                    <td>336</td>
+                    <td>21.48</td>
+                    <td>22.95</td>
+                    <td>16.31</td>
+                    <td>20.28</td>
+                  </tr>
+                  <tr>
+                    <td>LLaVA-v1.6-7b</td>
+                    <td>672</td>
+                    <td>26.49</td>
+                    <td>24.06</td>
+                    <td>20.47</td>
+                    <td>23.70</td>
+                  </tr>
+                  <tr>
+                    <td>LLaVA-ov-7b</td>
+                    <td>384</td>
+                    <td>26.81</td>
+                    <td>26.14</td>
+                    <td>27.57</td>
+                    <td>26.83</td>
+                  </tr>
+                  <tr>
+                    <td>Qwen2.5-VL-7b</td>
+                    <td>1000</td>
+                    <td>22.12</td>
+                    <td>15.54</td>
+                    <td>14.93</td>
+                    <td>17.55</td>
+                  </tr>
+                  <tr>
+                    <td>LLaVA-HR</td>
+                    <td>1536</td>
+                    <td>35.56</td>
+                    <td>44.30</td>
+                    <td>7.91</td>
+                    <td>29.26</td>
+                  </tr>
+                  <tr style="background-color: #fafafa;">
+                    <td colspan="6" style="padding: 2px;"></td>
+                  </tr>
+                  <tr>
+                    <td>GeoChat</td>
+                    <td>504</td>
+                    <td>25.06</td>
+                    <td>23.11</td>
+                    <td>15.66</td>
+                    <td>21.32</td>
+                  </tr>
+                  <tr>
+                    <td>VHM</td>
+                    <td>336</td>
+                    <td>35.24</td>
+                    <td>20.32</td>
+                    <td>16.80</td>
+                    <td>24.18</td>
+                  </tr>
+                  <tr style="background-color: #fafafa;">
+                    <td colspan="6" style="padding: 2px;"></td>
+                  </tr>
+                  <tr>
+                    <td>GeoLLaVA-8K</td>
+                    <td>8K</td>
+                    <td>34.90</td>
+                    <td>27.92</td>
+                    <td>22.27</td>
+                    <td>28.41</td>
+                  </tr>
+                  <tr>
+                    <td>ImageRAG</td>
+                    <td>Dynamic</td>
+                    <td>63.33</td>
+                    <td>60.48</td>
+                    <td>32.46</td>
+                    <td>52.09</td>
+                  </tr>
+                  <tr style="background-color: #fafafa;">
+                    <td colspan="6" style="padding: 2px;"></td>
+                  </tr>
+                  <tr>
+                    <td>ZoomEye</td>
+                    <td>Dynamic</td>
+                    <td>43.52</td>
+                    <td>60.88</td>
+                    <td>30.10</td>
+                    <td>44.94</td>
+                  </tr>
+                  <tr>
+                    <td>RAP</td>
+                    <td>Dynamic</td>
+                    <td style="color: #d4af37; font-weight: 700;">57.62</td>
+                    <td style="color: #d4af37; font-weight: 700;">64.53</td>
+                    <td style="color: #28a745; font-weight: 700;">40.25</td>
+                    <td style="color: #d4af37; font-weight: 700;">54.20</td>
+                  </tr>
+                  <tr style="background-color: #fafafa;">
+                    <td colspan="6" style="padding: 2px;"></td>
+                  </tr>
+                  <tr style="background-color: #e8f4f8; font-weight: 600;">
+                    <td><strong>ZoomSearch (Ours)</strong></td>
+                    <td>Dynamic</td>
+                    <td style="color: #28a745; font-weight: 700;">67.62</td>
+                    <td style="color: #28a745; font-weight: 700;">66.14</td>
+                    <td style="color: #d4af37; font-weight: 700;">39.15</td>
+                    <td style="color: #28a745; font-weight: 700;">57.64</td>
+                  </tr>
+                  <tr style="background-color: #fff3cd; font-style: italic;">
+                    <td><em>Improvements</em></td>
+                    <td>-</td>
+                    <td style="color: #dc3545; font-weight: 700;">+152%</td>
+                    <td style="color: #dc3545; font-weight: 700;">+153%</td>
+                    <td style="color: #dc3545; font-weight: 700;">+42%</td>
+                    <td style="color: #dc3545; font-weight: 700;">+115%</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Experiment Results Section -->
+
 <!-- Image carousel -->
 <section class="hero is-small">
   <div class="hero-body">
@@ -285,45 +716,34 @@
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           <h2 class="title is-3">Case Study</h2>
-          <style>
-            #results-carousel {
-              overflow: visible !important;
+           <style>
+            .carousel .carousel-navigation .carousel-nav-left {
+              left: -80px !important;
             }
-            
-            #results-carousel .slider {
-              overflow: visible !important;
-            }
-            
-            /* 将箭头移到图片外侧 */
-            #results-carousel .slider-navigation-previous {
-              left: -60px !important;
-            }
-            
-            #results-carousel .slider-navigation-next {
-              right: -60px !important;
+            .carousel .carousel-navigation .carousel-nav-right {
+              right: -80px !important;
             }
           </style>
-          
           <div id="results-carousel" class="carousel results-carousel">
-              <div class="item">
-                <img src="static/images/qualitative1.png" alt="Adaptive zoom search visualization" loading="lazy" style="max-width: 70%; margin: 0 auto; display: block;"/>
-                <h2 class="subtitle has-text-centered">
-                  Qualitative comparison between our method and other search-based methods on an object counting task.
-                </h2>
-              </div>
-              <div class="item">
-                <img src="static/images/qualitative2.png" alt="VQA results comparison" loading="lazy" style="max-width: 70%; margin: 0 auto; display: block;"/>
-                <h2 class="subtitle has-text-centered">
-                  Qualitative comparison between our method and other search-based methods on an object color recognition task.
-                </h2>
-              </div>
-              <div class="item">
-                <img src="static/images/good_cases.png" alt="VQA results comparison" loading="lazy" style="max-width: 70%; margin: 0 auto; display: block;"/>
-                <h2 class="subtitle has-text-centered">
-                   More qualitative results of ZoomSearch.
-                </h2>
-              </div>
+            <div class="item">
+              <img src="static/images/qualitative1.png" alt="Adaptive zoom search visualization" loading="lazy" style="max-width: 70%; margin: 0 auto; display: block;"/>
+              <h2 class="subtitle has-text-centered">
+                Qualitative comparison between our method and other search-based methods on an object counting task.
+              </h2>
             </div>
+            <div class="item">
+              <img src="static/images/qualitative2.png" alt="VQA results comparison" loading="lazy" style="max-width: 70%; margin: 0 auto; display: block;"/>
+              <h2 class="subtitle has-text-centered">
+                Qualitative comparison between our method and other search-based methods on an object color recognition task.
+              </h2>
+            </div>
+            <div class="item">
+              <img src="static/images/good_cases.png" alt="VQA results comparison" loading="lazy" style="max-width: 70%; margin: 0 auto; display: block;"/>
+              <h2 class="subtitle has-text-centered">
+                 More qualitative results of ZoomSearch.
+              </h2>
+            </div>
+          </div>
         </div>
       </div>
     </div>
