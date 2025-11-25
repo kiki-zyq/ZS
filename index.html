@@ -241,6 +241,40 @@
 </section>
 <!-- End paper abstract -->
 
+<!-- Introduction Hero Figure -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+
+      <h2 class="title is-3 mb-5">Overview of ZoomSearch</h2>
+
+      <figure>
+        <img 
+          src="static/images/pipeline.jpg" 
+          alt="ZoomSearch introduction figure"
+          style="max-width: 100%; border-radius: 12px; box-shadow: 0 4px 14px rgba(0,0,0,0.15);" 
+        />
+      </figure>
+
+      <div class="content has-text-justified mt-4" style="max-width: 800px; margin: 0 auto; font-size: 0.95rem; line-height: 1.55;">
+        <p>
+          Overview of the proposed <strong>ZoomSearch</strong> pipeline for Ultra-HR RS-VQA. 
+          The top-left part illustrates <strong>Adaptive Multi-Branch Zoom Search</strong>, 
+          which progressively explores the image and focuses on regions that are 
+          closely related to the text query. 
+          The bottom part shows the <strong>scoring mechanism</strong>, where each candidate patch 
+          is evaluated by a patch–text relevance score from an external scoring model 
+          and a model-evidence signal from the foundation model. 
+          The top-right part depicts <strong>Layout-Aware Patch Reassembly</strong>, 
+          which reorganizes the selected informative patches into a spatially 
+          consistent canvas that preserves their relative and global positions.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- End Introduction Hero Figure -->
 
 <!-- Image carousel -->
 <section class="hero is-small">
