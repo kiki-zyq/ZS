@@ -146,33 +146,6 @@
     ]
   }
   </script>
-
-  <!-- Custom styles for carousel arrows -->
-  <style>
-
-    .carousel-wrapper {
-      max-width: calc(100% - 140px);
-      margin: 0 auto;
-      position: relative;
-    }
-    
-
-    .slider-navigation-previous,
-    .slider-navigation-next {
-      position: absolute !important;
-      top: 50% !important;
-      transform: translateY(-50%) !important;
-      z-index: 10 !important;
-    }
-    
-    .slider-navigation-previous {
-      left: -70px !important;
-    }
-    
-    .slider-navigation-next {
-      right: -70px !important;
-    }
-  </style>
 </head>
 <body>
 
@@ -312,9 +285,22 @@
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           <h2 class="title is-3">Case Study</h2>
-      
-          <div class="carousel-wrapper">
-            <div id="results-carousel" class="carousel results-carousel">
+          <style>
+            #results-carousel .slider {
+              padding: 0 80px !important;
+              box-sizing: border-box !important;
+            }
+            
+            #results-carousel .slider-navigation-previous {
+              left: 10px !important;
+            }
+            
+            #results-carousel .slider-navigation-next {
+              right: 10px !important;
+            }
+          </style>
+          
+          <div id="results-carousel" class="carousel results-carousel">
               <div class="item">
                 <img src="static/images/qualitative1.png" alt="Adaptive zoom search visualization" loading="lazy" style="max-width: 70%; margin: 0 auto; display: block;"/>
                 <h2 class="subtitle has-text-centered">
@@ -334,7 +320,6 @@
                 </h2>
               </div>
             </div>
-          </div>
         </div>
       </div>
     </div>
