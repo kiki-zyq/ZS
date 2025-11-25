@@ -215,16 +215,6 @@
                       </a>
                     </span>
 
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
                   <span class="link-block">
                     <a href="https://github.com/YOUR_REPO_HERE" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
@@ -235,15 +225,6 @@
                   </a>
                 </span>
 
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
             </div>
           </div>
         </div>
@@ -251,22 +232,6 @@
     </div>
   </div>
 </section>
-
-
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
-        <source src="static/videos/banner_video.mp4" type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Our training-free adaptive zoom search method efficiently processes ultra-high resolution remote sensing imagery for visual question answering, focusing computational resources on relevant image regions.
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -276,7 +241,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            [TODO: Insert your paper's abstract here. This should be the full abstract from your paper, describing the problem, your approach, key contributions, and main results.]
+            With advances in satellite constellations, sensor technologies, and imaging pipelines, ultra-high-resolution (Ultra-HR) remote sensing imagery is becoming increasingly widespread. However, current remote sensing foundation models are ill-suited to such inputs: full-image encoding exhausts token and memory budgets, while resize-based preprocessing loses fine-grained and answer-critical details. In this context, guiding the model <strong>look where it matters</strong> before prediction becomes crucial. Therefore, we present <strong>ZoomSearch</strong>, a training-free, plug-and-play pipeline that decouples ‘where to look’ from ‘how to answer’ for Ultra-HR Remote Sensing Visual Question Answering (RS-VQA). ZoomSearch combines <strong>Adaptive Multi-Branch Zoom Search</strong>, which performs a hierarchical search over image patches to localize query-relevant regions, with <strong>Layout-Aware Patch Reassembly</strong>, which reorganizes the selected patches into a compact, layout-faithful canvas. We conduct comprehensive experiments on Ultra-HR RS-VQA benchmarks MME-RealWorld-RS and LRS-VQA, comparing against (i) strong general foundation models, (ii) remote sensing foundation models, (iii) Ultra-HR RS-VQA methods, and (iv) plug-and-play search-based VQA methods. When integrated with LLaVA-ov, <strong>ZoomSearch</strong> attains state-of-the-art accuracy across diverse tasks, improving the LLaVA-ov baseline by <strong>26.3%</strong> on LRS-VQA and <strong>114.8%</strong> on MME-RealWorld-RS. Meanwhile, it achieves much higher inference efficiency, outperforming prior search-based methods by <strong>20–44%</strong> in speed.
           </p>
         </div>
       </div>
@@ -323,75 +288,6 @@
 
 
 
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- TODO: Replace with your YouTube video ID -->
-            <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End youtube video -->
-
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Demo Videos</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-            <source src="static/videos/carousel1.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-            <source src="static/videos/carousel2.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
-
-
-
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
@@ -402,11 +298,11 @@
           <span class="copy-text">Copy</span>
         </button>
       </div>
-      <pre id="bibtex-code"><code>@article{zhou2024lookwhere,
+      <pre id="bibtex-code"><code>@article{ZoomSearch,
   title={Look Where It Matters: Training-Free Ultra-HR Remote Sensing VQA via Adaptive Zoom Search},
   author={Zhou, Yunqi and Jiang, Chengjie and Yuan, Chun and Li, Jing},
   journal={arXiv preprint arXiv:XXXX.XXXXX},
-  year={2024}
+  year={2025}
 }</code></pre>
     </div>
 </section>
